@@ -12,13 +12,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-// *** Used to add initial data to create DB *****
-// const query = {
-//     text: 'INSERT INTO houses(number, street, lat, long, treat, trick, description) VALUES($1, $2, $3, $4, $5, $6, $7)',
-//     values: [334, 'Coble Dr.', 89.077, 67.00, 0, 1, 'This is a description'],
-//   }
-
-
 
 // Set Handlebars as the default templating engine.
 app.engine("handlebars", exphbs({ defaultLayout: "main"}));
