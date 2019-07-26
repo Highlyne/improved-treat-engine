@@ -43,7 +43,7 @@ module.exports = function(app){
              else{
             conn.query(
             'SELECT * FROM houses', function(err, result) {
-                if (err == null || result.rowCount>0) {
+                if (err == null) {
                     console.log("Success you touched the DB  \nResults:");
                     console.log(result.rows[0].number);
                     appData = result.rows;
