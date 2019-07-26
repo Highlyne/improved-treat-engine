@@ -1,12 +1,14 @@
 Here is the data from salesforce object.
 
 <div class="container">
+    {{#each data}}
   <div class="row">
     <div class="col-sm">
       House Number
     </div>
     <div class="col-sm">
-      Data from SF
+      {{this.number}}
     </div>
   </div>
+  {{/each}}
 </div>
